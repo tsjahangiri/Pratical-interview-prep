@@ -34,6 +34,11 @@ public class RaceCondition {
         return sold[0] == 1;
     }
 }
+
+//Summary of Rules
+//    Never synchronize on a non-final field.
+//    Never synchronize on "boxed" types like Integer, Long, or String (because of object pooling and immutability).
+//    Always make your lock objects final.
 ```
 
 ---
