@@ -35,10 +35,6 @@ public class RaceCondition {
     }
 }
 
-//Summary of Rules
-//    Never synchronize on a non-final field.
-//    Never synchronize on "boxed" types like Integer, Long, or String (because of object pooling and immutability).
-//    Always make your lock objects final.
 ```
 
 ---
@@ -167,6 +163,11 @@ public class AlsoWrong {
     }
     // Fix: synchronized (AlsoWrong.class) for static shared state
 }
+
+//Summary of Rules
+//    Never synchronize on a non-final field.
+//    Never synchronize on "boxed" types like Integer, Long, or String (because of object pooling and immutability).
+//    Always make your lock objects final.
 ```
 
 ---
